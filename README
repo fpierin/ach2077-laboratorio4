@@ -1,0 +1,55 @@
+Autor: Felipe Lombardi Pierin - nUSP 5875242
+Autor: Paulo Henrique Silva  - nUsp 6875101
+
+
+Implementação de um exemplo de arquitetura MVC com acesso a banco de dados PostGre e manipulação de jsp/jsf.
+
+Linguagem de programação: 
+- Java JSE 1.6
+
+IDE de programação
+- Eclipse
+
+Banco de dados
+- Modelo Relacional
+- PostGreSQL 9
+
+Conceitos:
+- Model View Controller
+- JDBC
+- Pattern DAO
+- Java Server Pages (jsp)
+- Servlets
+- Scriptlets
+
+Resultados esperados:
+- Adicionar novos pontos geográficos e enviar respostas pela web;
+- Listar os pontos geográficos na web;
+- Remover pontos geográficos;
+
+Observação:
+
+ATIVIDADES DO LABORATÖRIO DE SOLUÇÕES WEB BASEADAS EM SOFTWARE LIVRE
+
+DATA: 10/10/2011
+ENTREGA:  18/10/2011
+
+Dada a tabela de pontos geográficos definida como:
+
+create table Ponto_Geografico (
+     IdPonto numeric(6) not null,
+     NomePonto varchar(100) not null,
+     graus numeric(5,2),
+     minutos numeric(5,2),
+     segundos numeric(5,2),
+     constraint IDPonto_Geografico primary key (IdPonto));
+
+Implementar um programa em Java que dados un formulário de entrada na web:
+
+Adicione novos pontos geográficos e envie uma resposta via web;
+Liste os pontos geográficos na web; e
+Remove pontos geográficos.
+
+Use os conceitos explicados em aula sobre JSP (Java Server Pages). 
+Tente usar alguma biblioteca de Tags (para evitar misturar código Java e HTML) e tente seguir o padrão MVC. 
+
